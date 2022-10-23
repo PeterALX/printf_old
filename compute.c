@@ -26,6 +26,8 @@ int compute(int state, char token)
 			state = 4;
 		else if (token == 's')
 			state = 5;
+		else if (token == 'u')
+			state = 6;
 		/*future feature: check format specifiers here*/
 	}
 	else if (state == 2)

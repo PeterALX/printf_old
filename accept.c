@@ -38,5 +38,10 @@ int accept(int *state, va_list ap, char token)
 		char_count += print_string(va_arg(ap, char*));
 		*state = 0;
 	}
+	else if (*state == 6)
+	{
+		char_count = print_unsigned_int(va_arg(ap, unsigned int));
+		*state = 0;
+	}
 	return (char_count);
 }

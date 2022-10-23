@@ -17,6 +17,7 @@ typedef struct flags
 void _putchar(char);
 int _printf(char *, ...);
 int print_int(int);
+int print_unsigned_int(unsigned int);
 int print_string(char *);
 int compute(int state, char token);
 int accept(int *state, va_list ap, char token);
