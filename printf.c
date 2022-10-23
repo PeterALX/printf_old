@@ -15,6 +15,8 @@ int _printf(char *str, ...)
 	int char_count = 0;
 
 	/*future feature: format flags struct will go here*/
+	if (!str)
+		return (-1);
 
 	va_start(ap, str);
 
