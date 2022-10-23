@@ -33,6 +33,8 @@ int print_int(int k)
 		rem /= 10;
 	}
 	str = malloc(sizeof(char) * count + 1); /* add null check */
+	if (!str)
+		exit(-1);
 	str[count] = '\0';
 	rem = k;
 	while (rem > 0)
