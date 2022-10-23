@@ -7,7 +7,7 @@
 * @str: the first param, a string, to be printed.
 * Return: the number of chars printed
 */
-int _printf(const char *str, ...)
+int _printf(const char *format, ...)
 {
 	va_list ap; /* argument pointer */
 	int i;
@@ -15,17 +15,17 @@ int _printf(const char *str, ...)
 	int char_count = 0;
 
 	/*future feature: format flags struct will go here*/
-	if (!str)
+	if (!format)
 		return (-1);
 
-	va_start(ap, str);
+	va_start(ap, format);
 
 	state = 0;
 	i = 0;
-	while (str[i])
+	while (format[i])
 	{
-		state = compute(state, str[i]);
-		char_count += accept(&state, ap, str[i]);
+		state = compute(state, format[i]);
+		char_count += accept(&state, ap, format[i]);
 		i++;
 	}
 	va_end(ap);
