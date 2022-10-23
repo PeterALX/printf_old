@@ -19,6 +19,5 @@ int print_string(char *str)
 		_putchar(*str);
 		str++;
 	}
-	_putchar('\0');
 	return (char_count);
 }
