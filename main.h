@@ -15,7 +15,7 @@ typedef struct flags
 } format_flags;
 
 void _putchar(char);
-int _printf(char *, ...);
+int _printf(const char *, ...);
 int print_int(int);
 int print_unsigned_int(unsigned int);
 int print_string(char *);

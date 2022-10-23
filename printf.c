@@ -7,7 +7,7 @@
 * @str: the first param, a string, to be printed.
 * Return: the number of chars printed
 */
-int _printf(char *str, ...)
+int _printf(const char *str, ...)
 {
 	va_list ap; /* argument pointer */
 	int i;
