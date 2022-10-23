@@ -30,7 +30,7 @@ int main(void)
 	_printf("Char:[%c]\n", 'H');
 	printf("Char:[%c]\n", 'H');
 	_printf("String:[%s]\n", "I am a string !");
-	_printf("String:[%s]\n", "");
+	_printf("String:[%s]\n", NULL);
 	printf("String:[%s]\n", "I am a string !");
 	/*
 	_printf("Address:[%p]\n", addr);

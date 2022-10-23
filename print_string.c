@@ -10,6 +10,9 @@ int print_string(char *str)
 {
 	int char_count = 0;
 
+	if (!str)
+		str = "(null)";
+
 	while (*str)
 	{
 		char_count++;
