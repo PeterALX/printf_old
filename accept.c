@@ -30,7 +30,6 @@ int accept(int *state, va_list ap, char token)
 	else if (*state == 4)
 	{
 		_putchar(va_arg(ap, int));
-		_putchar('U');
 		char_count++;
 		*state = 0;
 	}
